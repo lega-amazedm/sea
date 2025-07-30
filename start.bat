@@ -1,0 +1,3 @@
+@echo off
+echo Запуск сайта Sea Tori...
+start index.html 

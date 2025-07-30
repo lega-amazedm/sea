@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea Tori — Доставка фастфуда и европейской кухни</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Sea Tori Logo">
+                <h1>Sea Tori</h1>
+            </a>
+            <button class="burger" id="burgerBtn" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="mainNav">
+                <a href="index.html" class="active">Главная</a>
+                <a href="menu.html">Меню</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="slideshow">
+        <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1200&q=80');">
+            <div class="slider-overlay"></div>
+            <div class="slide-content slider-content">
+                <h2 class="slide-title">Доставка фаст-фуда и европейской кухни</h2>
+                <p class="slide-description">Готовим и доставляем по городу: пицца, роллы, чуду, бургеры, салаты и многое другое</p>
+                <a href="menu.html" class="slide-btn slider-btn">Смотреть меню</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2 class="section-title">Почему выбирают Sea Tori</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-biking feature-icon"></i>
+                <div>
+                    <h3 class="feature-title">Быстрая доставка</h3>
+                    <p class="feature-description">Доставим ваш заказ по городу быстро и горячим</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-hamburger feature-icon"></i>
+                <div>
+                    <h3 class="feature-title">Фастфуд и европейская кухня</h3>
+                    <p class="feature-description">Пицца, роллы, чуду, бургеры, салаты, комбо и многое другое</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-leaf feature-icon"></i>
+                <div>
+                    <h3 class="feature-title">Свежие ингредиенты</h3>
+                    <p class="feature-description">Готовим только из свежих и качественных продуктов</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt feature-icon"></i>
+                <div>
+                    <h3 class="feature-title">Удобный онлайн-заказ</h3>
+                    <p class="feature-description">Оформляйте заказ с телефона или компьютера — быстро и просто</p>
+                </div>
+            </div>
+        </div>
+        <div class="features-note" style="text-align:center; margin-top:2rem; color:#a05a1c; font-size:1.1rem;">
+            <b></b>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-contacts">
+                    <a href="tel:+79623760505" class="footer-phone"><i class="fas fa-phone"></i> +7 (962) 376-05-05</a>
+                    <span class="footer-dot">•</span>
+                    <span class="footer-address"><i class="fas fa-map-marker-alt"></i> ул. Эмиргамзаева, 42Б/1</span>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://wa.me/79623760505" target="_blank" title="WhatsApp" class="footer-social"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://t.me/seatoriderbent" target="_blank" title="Telegram" class="footer-social"><i class="fab fa-telegram"></i></a>
+                    <a href="#" target="_blank" title="Instagram" class="footer-social"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sea Tori. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="css/js/slider.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/burger.js"></script>
+    <script>
+    // Блокировка F12, Ctrl+Shift+I, Ctrl+U, Ctrl+S, Ctrl+Shift+C, Ctrl+Shift+J
+    document.addEventListener('keydown', function(e) {
+        if (e.key === "F12" || e.keyCode === 123) { e.preventDefault(); return false; }
+        if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) { e.preventDefault(); return false; }
+        if (e.ctrlKey && (e.key === 'u' || e.key === 's' || e.key === 'U' || e.key === 'S')) { e.preventDefault(); return false; }
+    });
+    document.addEventListener('contextmenu', function(e) { e.preventDefault(); return false; });
+    </script>
+</body>
+</html> 
